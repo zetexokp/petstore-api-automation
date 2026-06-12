@@ -17,7 +17,7 @@ public class StoreTest extends BaseTest {
 
     private static final long NON_EXISTING_ID = 999999999L;
 
-    // ================= SETUP =================
+    // SETUP
 
     @BeforeEach
     void setUp() {
