@@ -157,7 +157,7 @@ public class StoreTest extends BaseTest {
                 .statusCode(anyOf(is(400), is(404)));
     }
 
-    // ================= CLEANUP =================
+    // CLEANUP
 
     @AfterEach
     void tearDown() {

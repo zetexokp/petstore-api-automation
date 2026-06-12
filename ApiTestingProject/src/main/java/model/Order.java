@@ -26,8 +26,6 @@ public class Order {
         this.complete = complete;
     }
 
-    // ================= GETTERS =================
-
     public Long getId() {
         return id;
     }
@@ -51,8 +49,6 @@ public class Order {
     public Boolean getComplete() {
         return complete;
     }
-
-    // ================= SETTERS (не обязательно, но лучше иметь) =================
 
     public void setId(Long id) {
         this.id = id;

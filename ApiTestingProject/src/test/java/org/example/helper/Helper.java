@@ -2,6 +2,7 @@ package org.example.helper;
 
 import model.Order;
 import model.Pet;
+import model.User;
 
 import java.util.List;
 import java.util.Random;
@@ -10,7 +11,6 @@ public class Helper {
 
     private static final Random RANDOM = new Random();
 
-    // ================= PET =================
 
     public static Pet createDefaultPet() {
         return new Pet(
@@ -33,8 +33,6 @@ public class Helper {
         );
     }
 
-    // ================= ORDER =================
-
     public static Order createDefaultOrder() {
         return new Order(
                 RANDOM.nextLong(1000, 10000),
@@ -43,6 +41,21 @@ public class Helper {
                 "2026-06-12T06:44:07.930Z",
                 "placed",
                 true
+        );
+    }
+
+    public static User createDefaultUser() {
+        long id = RANDOM.nextLong(1000, 10000);
+
+        return new User(
+                id,
+                "user" + id,
+                "Test",
+                "User",
+                "user" + id + "@mail.com",
+                "password123",
+                "+373" + RANDOM.nextInt(10000000, 99999999),
+                1L
         );
     }
 }
